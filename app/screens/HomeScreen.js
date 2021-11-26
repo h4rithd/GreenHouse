@@ -24,7 +24,7 @@ const HomeScreen = () => {
             color={COLOR.primary}
             style={styles.headerViewIcon}
           />
-          <Text style={styles.headerViewText}>Grean House</Text>
+          <Text style={styles.headerViewText}>Green House</Text>
           <Icons
             name="shopping-bag"
             size={40}
