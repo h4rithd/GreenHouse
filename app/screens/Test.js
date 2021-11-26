@@ -81,28 +81,52 @@ const HomeScreen = () => {
           <View style={styles.middleHeaderViewLine} />
         </View>
       </View>
-
       <View style={styles.middleItemView}>
-      <View style={styles.middleItemViewWrapper}>
-      <View style={styles.middleItemListItemView}>
-       <View style={styles.middleItemListItemWrapperView}>
-         <View style={styles.middleItemListImageView}/>
-         <View style={styles.middleItemListDiscriptionView}>
-           
-         </View>
-         
-       </View>
+        <View style={styles.middleItemViewWrapper}>
+          <View style={styles.middleItemListItemView}>
+            <View style={styles.middleItemListItemWrapperView}>
+              <View style={styles.middleItemListImageView} />
+              <View style={styles.middleItemListDiscriptionView}>
+                <View style={styles.middleItemListDiscriptionTextWrapper}>
+                  <Text style={styles.middleItemListDiscriptionMainText}>
+                    Sashimi Salad
+                  </Text>
+                  <Text style={styles.middleItemListDiscriptionSubText}>
+                    Raw tuna marinated in sesame oil
+                  </Text>
+                  <Text style={styles.middleItemListDiscriptionPriceText}>
+                    $15.47
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View style={styles.middleItemListItemView}>
+            <View style={styles.middleItemListItemWrapperView}>
+              <View style={styles.middleItemListImageView} />
+              <View style={styles.middleItemListDiscriptionView}>
+                <View style={styles.middleItemListDiscriptionTextWrapper}>
+                  <Text style={styles.middleItemListDiscriptionMainText}>
+                    Quinoa Salad
+                  </Text>
+                  <Text style={styles.middleItemListDiscriptionSubText}>
+                    warm quinoa with garlic olive oil
+                  </Text>
+                  <Text style={styles.middleItemListDiscriptionPriceText}>
+                    $17.47
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
       </View>
-      <View style={styles.middleItemListItemView}>
-      <View style={styles.middleItemListItemWrapperView}>
-         <View style={styles.middleItemListImageView}/>
-         <View style={styles.middleItemListDiscriptionView}>
-           
-         </View>
-         
-       </View>
-      </View>
-      </View>
+      <View style={styles.bottomView}>
+        <View style={styles.bottomViewWrapper}>
+          <View style={styles.bottomViewItem}>
+
+          </View>
+        </View>
       </View>
     </View>
   );
@@ -111,50 +135,80 @@ const HomeScreen = () => {
 export default HomeScreen;
 
 const styles = StyleSheet.create({
-  middleItemListDiscriptionView:{
-    width:"80%",
-    height:100,
-    marginTop:5,
-    left:-50,
-    borderRadius:40,
-    backgroundColor:COLOR.secondary,
+  bottomViewItem:{
+    width:500,
+    height:500,
+    backgroundColor: COLOR.black,
   },
-  middleItemListImageView:{
-    borderColor:COLOR.territory,
-    borderWidth:4,
-    width:110,
-    height:110,
-    borderRadius:55,
-    backgroundColor:'white',
+  bottomViewWrapper: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent:'center'
   },
-  middleItemListItemWrapperView:{
-    flex:1,
-    flexDirection:'row',
+  bottomView: {
+    backgroundColor: COLOR.primary,
+  },
+  middleItemListDiscriptionPriceText: {
+    fontSize: 25,
+    fontWeight: '600',
+  },
+  middleItemListDiscriptionSubText: {
+    fontSize: 14,
+  },
+  middleItemListDiscriptionMainText: {
+    fontSize: 20,
+    fontWeight: '800',
+  },
+  middleItemListDiscriptionTextWrapper: {
+    left: 60,
+    marginTop: 10,
+  },
+  middleItemListDiscriptionView: {
+    width: '80%',
+    height: 100,
+    marginTop: 5,
+    borderRadius: 40,
+    left: -50,
+    backgroundColor: COLOR.secondary,
+    zIndex: 1,
+  },
+  middleItemListImageView: {
+    borderColor: COLOR.territory,
+    borderWidth: 4,
+    width: 110,
+    height: 110,
+    borderRadius: 55,
+    backgroundColor: 'white',
+    zIndex: 2,
+  },
+  middleItemListItemWrapperView: {
+    flex: 1,
+    flexDirection: 'row',
   },
 
-  middleItemListItemView:{
-    backgroundColor:COLOR.white,
-    width:"100%",
-    height:110,
-    marginVertical:8,
-    marginTop:0,
+  middleItemListItemView: {
+    backgroundColor: COLOR.white,
+    width: '100%',
+    height: 110,
+    marginVertical: 8,
+    marginTop: 0,
   },
-  middleItemListView:{
-    width:110,
-    height:110,
-    borderRadius:55,
-    backgroundColor:COLOR.white,
-    margin:4,
+  middleItemListView: {
+    width: 110,
+    height: 110,
+    borderRadius: 55,
+    backgroundColor: COLOR.white,
+    margin: 4,
   },
-  middleItemViewWrapper:{
-    flex:1,
-    flexDirection:'column',
-    padding:10,
+  middleItemViewWrapper: {
+    flex: 1,
+    flexDirection: 'column',
+    padding: 10,
   },
-  middleItemView:{
-    width:'100%',
-    height:250,
-    backgroundColor:COLOR.white
+  middleItemView: {
+    width: '100%',
+    height: 250,
+    backgroundColor: COLOR.white,
   },
   middleHeaderViewLine: {
     marginTop: 5,
