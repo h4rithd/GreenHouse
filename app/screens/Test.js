@@ -6,6 +6,7 @@ import {
   View,
   TouchableOpacity,
   ScrollView,
+  Image,
 } from 'react-native';
 
 import Icons from 'react-native-vector-icons/MaterialIcons';
@@ -83,9 +84,10 @@ const HomeScreen = () => {
       </View>
       <View style={styles.middleItemView}>
         <View style={styles.middleItemViewWrapper}>
-          <View style={styles.middleItemListItemView}>
+        <ScrollView horizontal={false} showsVerticalScrollIndicator={false}>
+        <View style={styles.middleItemListItemView}>
             <View style={styles.middleItemListItemWrapperView}>
-              <View style={styles.middleItemListImageView} />
+            <Image source={require('../accests/images/SashimiSalad.png')} style={styles.middleItemListImageView} />
               <View style={styles.middleItemListDiscriptionView}>
                 <View style={styles.middleItemListDiscriptionTextWrapper}>
                   <Text style={styles.middleItemListDiscriptionMainText}>
@@ -103,7 +105,7 @@ const HomeScreen = () => {
           </View>
           <View style={styles.middleItemListItemView}>
             <View style={styles.middleItemListItemWrapperView}>
-              <View style={styles.middleItemListImageView} />
+              <Image source={require('../accests/images/QuinoaSalad.jpg')} style={styles.middleItemListImageView} />
               <View style={styles.middleItemListDiscriptionView}>
                 <View style={styles.middleItemListDiscriptionTextWrapper}>
                   <Text style={styles.middleItemListDiscriptionMainText}>
@@ -119,13 +121,282 @@ const HomeScreen = () => {
               </View>
             </View>
           </View>
+          <View style={styles.middleItemListItemView}>
+            <View style={styles.middleItemListItemWrapperView}>
+              <Image source={require('../accests/images/default.jpg')} style={styles.middleItemListImageView} />
+              <View style={styles.middleItemListDiscriptionView}>
+                <View style={styles.middleItemListDiscriptionTextWrapper}>
+                  <Text style={styles.middleItemListDiscriptionMainText}>
+                    Sashimi Salad
+                  </Text>
+                  <Text style={styles.middleItemListDiscriptionSubText}>
+                    Raw tuna marinated in sesame oil
+                  </Text>
+                  <Text style={styles.middleItemListDiscriptionPriceText}>
+                    $15.47
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View style={styles.middleItemListItemView}>
+            <View style={styles.middleItemListItemWrapperView}>
+              <Image source={require('../accests/images/QuinoaSalad.jpg')} style={styles.middleItemListImageView} />
+              <View style={styles.middleItemListDiscriptionView}>
+                <View style={styles.middleItemListDiscriptionTextWrapper}>
+                  <Text style={styles.middleItemListDiscriptionMainText}>
+                    Sashimi Salad
+                  </Text>
+                  <Text style={styles.middleItemListDiscriptionSubText}>
+                    Raw tuna marinated in sesame oil
+                  </Text>
+                  <Text style={styles.middleItemListDiscriptionPriceText}>
+                    $15.47
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View style={styles.middleItemListItemView}>
+            <View style={styles.middleItemListItemWrapperView}>
+              <Image source={require('../accests/images/default.jpg')} style={styles.middleItemListImageView} />
+              <View style={styles.middleItemListDiscriptionView}>
+                <View style={styles.middleItemListDiscriptionTextWrapper}>
+                  <Text style={styles.middleItemListDiscriptionMainText}>
+                    Sashimi Salad
+                  </Text>
+                  <Text style={styles.middleItemListDiscriptionSubText}>
+                    Raw tuna marinated in sesame oil
+                  </Text>
+                  <Text style={styles.middleItemListDiscriptionPriceText}>
+                    $15.47
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View style={styles.middleItemListItemView}>
+            <View style={styles.middleItemListItemWrapperView}>
+              <Image source={require('../accests/images/QuinoaSalad.jpg')} style={styles.middleItemListImageView} />
+              <View style={styles.middleItemListDiscriptionView}>
+                <View style={styles.middleItemListDiscriptionTextWrapper}>
+                  <Text style={styles.middleItemListDiscriptionMainText}>
+                    Sashimi Salad
+                  </Text>
+                  <Text style={styles.middleItemListDiscriptionSubText}>
+                    Raw tuna marinated in sesame oil
+                  </Text>
+                  <Text style={styles.middleItemListDiscriptionPriceText}>
+                    $15.47
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </ScrollView>
+
+ 
+        </View>
+      </View>
+      <View style={styles.middleHeaderView}>
+        <View style={styles.middleHeaderViewWrapper}>
+          <Text style={styles.middleHeaderViewText}>SEASONAL</Text>
+          <View style={[styles.middleHeaderViewLine, {width: 270}]} />
         </View>
       </View>
       <View style={styles.bottomView}>
         <View style={styles.bottomViewWrapper}>
-          <View style={styles.bottomViewItem}>
-
-          </View>
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+            <View style={styles.bottomViewItemWrapper}>
+              <Image  source={require('../accests/images/mixSalad.jpg')} style={styles.bottomViewItemImage} />
+              <Text style={styles.middleItemListDiscriptionMainText}>
+                Mixed Salad
+              </Text>
+              <Text
+                style={[
+                  styles.middleItemListDiscriptionSubText,
+                  {
+                    marginTop: 1,
+                    marginLeft: 2,
+                    marginRight: 2,
+                    textAlign: 'center',
+                  },
+                ]}>
+                Colorful variety of veggies
+              </Text>
+              <Text style={styles.middleItemListDiscriptionPriceText}>
+                $8.40
+              </Text>
+            </View>
+            <View style={styles.bottomViewItemWrapper}>
+              <Image  source={require('../accests/images/Acar.jpg')} style={styles.bottomViewItemImage} />
+              <Text style={styles.middleItemListDiscriptionMainText}>
+              Acar
+              </Text>
+              <Text
+                style={[
+                  styles.middleItemListDiscriptionSubText,
+                  {
+                    marginTop: 1,
+                    marginLeft: 2,
+                    marginRight: 2,
+                    textAlign: 'center',
+                  },
+                ]}>
+                Colorful variety of veggies
+              </Text>
+              <Text style={styles.middleItemListDiscriptionPriceText}>
+                $5.40
+              </Text>
+            </View>
+            <View style={styles.bottomViewItemWrapper}>
+              <Image  source={require('../accests/images/Asinan.jpg')} style={styles.bottomViewItemImage} />
+              <Text style={styles.middleItemListDiscriptionMainText}>
+              Asinan
+              </Text>
+              <Text
+                style={[
+                  styles.middleItemListDiscriptionSubText,
+                  {
+                    marginTop: 1,
+                    marginLeft: 2,
+                    marginRight: 2,
+                    textAlign: 'center',
+                  },
+                ]}>
+                Colorful variety of veggies
+              </Text>
+              <Text style={styles.middleItemListDiscriptionPriceText}>
+                $2.40
+              </Text>
+            </View>
+            <View style={styles.bottomViewItemWrapper}>
+              <Image  source={require('../accests/images/Asinan.jpg')} style={styles.bottomViewItemImage} />
+              <Text style={styles.middleItemListDiscriptionMainText}>
+                Mixed Salad
+              </Text>
+              <Text
+                style={[
+                  styles.middleItemListDiscriptionSubText,
+                  {
+                    marginTop: 1,
+                    marginLeft: 2,
+                    marginRight: 2,
+                    textAlign: 'center',
+                  },
+                ]}>
+                Colorful variety of veggies
+              </Text>
+              <Text style={styles.middleItemListDiscriptionPriceText}>
+                $8.40
+              </Text>
+            </View>
+            <View style={styles.bottomViewItemWrapper}>
+              <Image  source={require('../accests/images/mixSalad.jpg')} style={styles.bottomViewItemImage} />
+              <Text style={styles.middleItemListDiscriptionMainText}>
+                Mixed Salad
+              </Text>
+              <Text
+                style={[
+                  styles.middleItemListDiscriptionSubText,
+                  {
+                    marginTop: 1,
+                    marginLeft: 2,
+                    marginRight: 2,
+                    textAlign: 'center',
+                  },
+                ]}>
+                Colorful variety of veggies
+              </Text>
+              <Text style={styles.middleItemListDiscriptionPriceText}>
+                $8.40
+              </Text>
+            </View>
+            <View style={styles.bottomViewItemWrapper}>
+              <Image  source={require('../accests/images/mixSalad.jpg')} style={styles.bottomViewItemImage} />
+              <Text style={styles.middleItemListDiscriptionMainText}>
+                Mixed Salad
+              </Text>
+              <Text
+                style={[
+                  styles.middleItemListDiscriptionSubText,
+                  {
+                    marginTop: 1,
+                    marginLeft: 2,
+                    marginRight: 2,
+                    textAlign: 'center',
+                  },
+                ]}>
+                Colorful variety of veggies
+              </Text>
+              <Text style={styles.middleItemListDiscriptionPriceText}>
+                $8.40
+              </Text>
+            </View>
+            <View style={styles.bottomViewItemWrapper}>
+              <Image  source={require('../accests/images/mixSalad.jpg')} style={styles.bottomViewItemImage} />
+              <Text style={styles.middleItemListDiscriptionMainText}>
+                Mixed Salad
+              </Text>
+              <Text
+                style={[
+                  styles.middleItemListDiscriptionSubText,
+                  {
+                    marginTop: 1,
+                    marginLeft: 2,
+                    marginRight: 2,
+                    textAlign: 'center',
+                  },
+                ]}>
+                Colorful variety of veggies
+              </Text>
+              <Text style={styles.middleItemListDiscriptionPriceText}>
+                $8.40
+              </Text>
+            </View>
+            <View style={styles.bottomViewItemWrapper}>
+              <Image  source={require('../accests/images/mixSalad.jpg')} style={styles.bottomViewItemImage} />
+              <Text style={styles.middleItemListDiscriptionMainText}>
+                Mixed Salad
+              </Text>
+              <Text
+                style={[
+                  styles.middleItemListDiscriptionSubText,
+                  {
+                    marginTop: 1,
+                    marginLeft: 2,
+                    marginRight: 2,
+                    textAlign: 'center',
+                  },
+                ]}>
+                Colorful variety of veggies
+              </Text>
+              <Text style={styles.middleItemListDiscriptionPriceText}>
+                $8.40
+              </Text>
+            </View>
+            <View style={styles.bottomViewItemWrapper}>
+              <Image  source={require('../accests/images/mixSalad.jpg')} style={styles.bottomViewItemImage} />
+              <Text style={styles.middleItemListDiscriptionMainText}>
+                Mixed Salad
+              </Text>
+              <Text
+                style={[
+                  styles.middleItemListDiscriptionSubText,
+                  {
+                    marginTop: 1,
+                    marginLeft: 2,
+                    marginRight: 2,
+                    textAlign: 'center',
+                  },
+                ]}>
+                Colorful variety of veggies
+              </Text>
+              <Text style={styles.middleItemListDiscriptionPriceText}>
+                $8.40
+              </Text>
+            </View>
+          </ScrollView>
         </View>
       </View>
     </View>
@@ -135,18 +406,29 @@ const HomeScreen = () => {
 export default HomeScreen;
 
 const styles = StyleSheet.create({
-  bottomViewItem:{
-    width:500,
-    height:500,
-    backgroundColor: COLOR.black,
+  bottomViewItemImage: {
+    width: 110,
+    height: 110,
+    marginTop: 10,
+    borderRadius: 55,
+    borderColor: COLOR.territory,
+    borderWidth: 4,
+  },
+  bottomViewItemWrapper: {
+    flex: 1,
+    flexDirection: 'column',
+    width: 150,
+    height: 230,
+    alignItems: 'center',
+    margin: 5,
   },
   bottomViewWrapper: {
     flex: 1,
     flexDirection: 'row',
-    justifyContent:'center'
   },
   bottomView: {
-    backgroundColor: COLOR.primary,
+    width: '100%',
+    height: '100%',
   },
   middleItemListDiscriptionPriceText: {
     fontSize: 25,
@@ -178,7 +460,6 @@ const styles = StyleSheet.create({
     width: 110,
     height: 110,
     borderRadius: 55,
-    backgroundColor: 'white',
     zIndex: 2,
   },
   middleItemListItemWrapperView: {
@@ -208,7 +489,6 @@ const styles = StyleSheet.create({
   middleItemView: {
     width: '100%',
     height: 250,
-    backgroundColor: COLOR.white,
   },
   middleHeaderViewLine: {
     marginTop: 5,
